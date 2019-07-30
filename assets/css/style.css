@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 588px;
     font-size: 13px;
     text-align: justify;
-    height: auto;
+    height: 550px;
     background-color: white;
     opacity: 0.8;
     color: black;
@@ -89,28 +89,44 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 720px;
 }
 
+
+
+.apple, .android {background: #00d0ef;
+  padding: 5px 10px 5px 5px;
+  width: auto;
+  text-decoration: none;
+  color: white;
+  font-variant: all-small-caps;
+  font-size: 25px;
+  margin: 0px 10px;
+  display: inline-block; }
+
+    .apple a, .android a {color: white; text-decoration: none;}  
+
+.apple:hover, .android:hover {
+      color: #00d0ef;
+      background: #ffffff;
+      transition-duration: 0.4s;
+  }    
+
+.apple::before {content: url(../images/apple.png); padding: 5px;
+
+}
+
+
+.android::before {content: url(../images/android.png); padding: 5px;
+
+  }
+
+
+
+
 @-moz-document url-prefix() {
     .buttons {margin-top: 735px;}
   }
  
 
 
-.buttons a{
-    background: #00d0ef;
-    padding: 10px 20px 10px 40px;
-    width: 200px;
-    text-decoration: none;
-    color: white;
-    font-variant: all-small-caps;
-    font-size: 25px;
-    margin: 0px 10px;
-}
-
-.buttons a:hover {
-    color: #00d0ef;
-    background: #ffffff;
-    transition-duration: 0.4s;
-}
 
 
 
