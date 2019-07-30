@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+
+}
+
+html {width: 100%;
+  height: 100%;
+  background: url(../images/bg.jpg) fixed center center;
+   -webkit-background-size: cover; 
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Background */
+
+
+
+.phonepic {
+    width: 490px;
+    height: 707px;
+    background: url(../images/phones.png) left no-repeat;
+    position: absolute;
+    margin-top: 80px;
+
+}
+
+.aboutbox {
+    margin-left: 465px;
+}
+
+.about {
+    width: 588px;
+    font-size: 13px;
+    text-align: justify;
+    height: auto;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    padding: 10px 10px 60px 10px;
+    position: absolute;
+    margin-top: 230px;
+}
+
+.welcome {
+    position: absolute;
+    font-size: 62px;
+    color: white;
+    margin-top: 78px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.welcome::after {
+    content: url(../images/logo.png);
+    width: 119px;
+    height: 131px;
+}
+
+.buttons {
+    width: 588px;
+    position: absolute;
+    text-align: center;
+    margin-top: 720px;
+}
+
+@-moz-document url-prefix() {
+    .buttons {margin-top: 735px;}
+  }
+ 
+
+
+.buttons a{
+    background: #00d0ef;
+    padding: 10px 20px 10px 40px;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    font-variant: all-small-caps;
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.buttons a:hover {
+    color: #00d0ef;
+    background: #ffffff;
+    transition-duration: 0.4s;
+}
+
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0; right: 0; 
+    z-index: 999;
+}
+
+.header__inner {
+    float: left;
+}
+
+.language {
+    color: white;
+    position: absolute;
+    margin-left: 226px;
+    margin-top: 9px;
+    font-variant: all-small-caps;
+    text-align: left;
+} 
+
+ .lngswitch {
+     position: absolute;
+     margin-left: 175px;
+ }
+
+.lngswitch ul li{
+    padding: 10px;
+  }
+  .lngswitch ul > li:hover{
+    background-color: #00d0ef;
+  }
+  .lngswitch ul ul > li:hover{
+    background-color: #00d0ef;
+  }
+  .lngswitch ul li, .lngswitch ul{
+    display: inline-block;
+  }
+  .lngswitch ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #00d0ef;
+  }
+  .lngswitch ul ul{
+    display: none;
+    position: absolute;
+    background-color: #00d0ef;
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+  .lngswitch ul a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .lngswitch ul ul a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .lngswitch li:hover ul{
+    display: block;
+  }
+  
+  .lngswitch li:hover li{
+    display: block;
+  }
