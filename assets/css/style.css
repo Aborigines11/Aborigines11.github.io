@@ -27,6 +27,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+@media screen and (max-width: 460px) { 
+  
+  .container {max-width: auto;}
+  .phonepic {display: none;} 
+  .aboutbox {margin-left: 0px !important}
+
+}
+
 
 
 /* Container */
@@ -86,43 +94,22 @@ h1, h2, h3, h4, h5, h6 {
     width: 588px;
     position: absolute;
     text-align: center;
-    margin-top: 720px;
+    margin-top: 710px;
 }
 
 
 
-.apple, .android {background: #00d0ef;
-  padding: 5px 10px 5px 5px;
-  width: auto;
-  text-decoration: none;
-  color: white;
-  font-variant: all-small-caps;
-  font-size: 25px;
-  margin: 0px 10px;
-  display: inline-block; }
+.apple, .android {
+  width: 200px; height: 64px; display: inline-block;}
 
-    .apple a, .android a {color: white; text-decoration: none;}  
-
-.apple:hover, .android:hover {
-      color: #00d0ef;
-      background: #ffffff;
-      transition-duration: 0.4s;
-  }    
-
-.apple::before {content: url(../images/apple.png); padding: 5px;
-
-}
-
-
-.android::before {content: url(../images/android.png); padding: 5px;
-
-  }
-
+.apple {background: url(../images/apple.png)}
+.android {background: url(../images/android.png)}
 
 
 
 @-moz-document url-prefix() {
     .buttons {margin-top: 735px;}
+    .about {height: 580px;}
   }
  
 
